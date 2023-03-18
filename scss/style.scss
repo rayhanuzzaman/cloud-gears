@@ -1,0 +1,170 @@
+$icon-size:50px;
+$dark-overlay:rgba(0,0,0,0.7);
+.navbar{
+    background-color: #000;
+    .nav-item{
+        padding-left: 1rem;
+    }
+    .nav-link{
+        text-transform: uppercase;
+    }
+}
+.carousel-item{
+        height: 450px;
+}
+.carousel-img-1{
+        background-image: url(../img/image1.jpg);
+        background-size: cover;
+}
+.carousel-img-2{
+        background-image: url(../img/image2.jpg);
+        background-size: cover;
+}
+.carousel-img-3{
+        background-image: url(../img/image3.jpg);
+        background-size: cover;
+}
+#home-icon{
+    font-size: $icon-size;
+}
+#get-started{
+    position: relative;
+    background: url(../img/bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 250px;
+
+    .dark-overlay{
+        background: $dark-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+#home-video{
+    position: relative;
+    background-image: url(../img/people.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 250px;
+
+    .dark-overlay{
+        background: $dark-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        .fa{
+            font-size: $icon-size;
+            color: #ff0000;
+        }
+        
+    }
+}
+#photo-gallary{
+    img{
+        height: 250px;
+        width: 350px;
+    }
+    h2{
+        line-height: 1.2rem;
+    }
+
+} 
+#copyright{
+    background: #000;
+}
+// #newslatter{
+//   background: #343a40;
+// }
+#page-header{
+    background: url(../img/image6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+#services-page-header{
+    background: url(../img/image2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+#about-info{
+   img{
+       height: 350px;
+       width: 350px;
+   }
+}
+#icon-boxes{
+   .fa{
+       font-size: $icon-size;
+   }
+}
+#testimonial{
+    .slick-prev::before,
+    .slick-next::before{
+        color: #000;
+    }
+}
+#blog-page-header{
+    background-image: url(../img/image3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#blog{
+    h3{
+        line-height: 0.6;
+    }
+    hr{
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+}
+#contact-page-header{
+    background-image: url(../img/people.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact-section{
+    h3{
+        line-height: 0.2;
+    }
+}
+
+
+@media(max-width:767px){
+            .nav-item{
+                padding-left: 0 !important;
+            }
+            #get-started{
+                min-height: 300px;
+            }
+        }
+    
+@media(max-width:479px){
+        .carousel{
+            font-size: 1rem;
+        }
+        #get-started{
+            min-height: 350px;
+        }
+        // .carousel-control-prev{
+        //     padding-bottom: 350px;
+        // }
+        // .carousel-control-next{
+        //     padding-bottom: 350px;
+        // }
+    }
+    @media(max-width:350px){
+        #get-started{
+            min-height: 420px;
+        }
+      
+    }
